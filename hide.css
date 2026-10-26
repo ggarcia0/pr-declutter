@@ -31,6 +31,8 @@ html.prd-pr.prd-hide-side-all [class*="PageLayout-PaneWrapper"]:has(> #pr-conver
 /* ---- Conversación ---- */
 html.prd-pr.prd-hide-code-button [class*="PageHeader-Actions"] button[aria-haspopup="true"][class*="hideLeadingVisual"] { display: none !important; }
 
+html.prd-pr.prd-hide-tab-checks a[class*="TabNavLink"][href$="/checks"] { display: none !important; }
+
 html.prd-pr.prd-hide-convert-draft [class*="mergePartialContainer"] > .text-small.flex-justify-end,
 html.prd-pr.prd-hide-convert-draft #partial-discussion-sidebar form[id^="pull-request-reviewers-form"] > .py-2.d-flex:has(a[href$="/draft"], button) { display: none !important; }
 

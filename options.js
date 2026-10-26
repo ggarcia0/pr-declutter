@@ -28,6 +28,7 @@ const PRD_OPTIONS = [
   ]},
   { group: "Conversación", items: [
     { key: "code-button", label: "Botón “Code” del encabezado", on: false },
+    { key: "tab-checks", label: "Pestaña Checks del PR", on: true },
     { key: "convert-draft", label: "“Still in progress? Convert to draft”", on: true },
     { key: "cli-hint", label: "“Merge with the command line”", on: true },
     { key: "reactions", label: "Reacciones (emoji)", on: false },

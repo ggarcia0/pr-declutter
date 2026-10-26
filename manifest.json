@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "PR Declutter",
+  "version": "0.1.0",
+  "description": "Oculta las partes de los pull requests de GitHub que no usás.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "PR Declutter",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["options.js", "content.js"],
+      "css": ["hide.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

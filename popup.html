@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>PR Declutter</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #fff; --fg: #1f2328; --muted: #59636e; --line: #d1d9e0; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --line: #3d444d; } }
+    body { margin: 0; width: 280px; background: var(--bg); color: var(--fg); font: 13px/1.4 system-ui, sans-serif; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+    h1 { font-size: 14px; margin: 0; }
+    h2 { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 12px 12px 4px; }
+    label { display: flex; gap: 8px; align-items: center; padding: 3px 12px; cursor: pointer; }
+    label:hover { background: color-mix(in srgb, var(--line) 35%, transparent); }
+    main { padding-bottom: 8px; max-height: 520px; overflow-y: auto; }
+    main.off { opacity: .45; }
+    footer { display: flex; justify-content: flex-end; padding: 8px 12px; border-top: 1px solid var(--line); }
+    button { font: inherit; background: none; border: 1px solid var(--line); border-radius: 6px; color: var(--fg); padding: 3px 10px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ocultar en PRs</h1>
+    <label style="padding:0"><input type="checkbox" id="enabled"> Activo</label>
+  </header>
+  <main id="list"></main>
+  <footer><button id="reset">Restablecer</button></footer>
+  <script src="options.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

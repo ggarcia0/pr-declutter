@@ -1,0 +1,43 @@
+/* Todo queda bajo html.prd-pr: solo actúa en páginas /owner/repo/pull/N. */
+
+/* ---- Barra de arriba ---- */
+html.prd-pr.prd-hide-copilot-header header.GlobalNav [class*="ButtonGroup-ButtonGroup"]:has([class*="CopilotMenu"]),
+html.prd-pr.prd-hide-copilot-header header.GlobalNav button[aria-label="Open agents panel"] { display: none !important; }
+
+html.prd-pr.prd-hide-nav-issues nav[aria-label="Repository"] li:has(> a[data-tab-item="issues"]),
+html.prd-pr.prd-hide-nav-agents nav[aria-label="Repository"] li:has(> a[data-tab-item="agents"]),
+html.prd-pr.prd-hide-nav-actions nav[aria-label="Repository"] li:has(> a[data-tab-item="actions"]),
+html.prd-pr.prd-hide-nav-projects nav[aria-label="Repository"] li:has(> a[data-tab-item="projects"]),
+html.prd-pr.prd-hide-nav-wiki nav[aria-label="Repository"] li:has(> a[data-tab-item="wiki"]),
+html.prd-pr.prd-hide-nav-security nav[aria-label="Repository"] li:has(> a[data-tab-item="security-and-quality"]),
+html.prd-pr.prd-hide-nav-insights nav[aria-label="Repository"] li:has(> a[data-tab-item="insights"]),
+html.prd-pr.prd-hide-nav-settings nav[aria-label="Repository"] li:has(> a[data-tab-item="settings"]) { display: none !important; }
+
+/* ---- Panel lateral ---- */
+html.prd-pr.prd-hide-side-reviewers #partial-discussion-sidebar > :has([id^="pull-request-reviewers-form"]),
+html.prd-pr.prd-hide-side-assignees #partial-discussion-sidebar > :has(#assignees-select-menu),
+html.prd-pr.prd-hide-side-labels #partial-discussion-sidebar > :has(#labels-select-menu),
+html.prd-pr.prd-hide-side-projects #partial-discussion-sidebar > :has(#projects-select-menu),
+html.prd-pr.prd-hide-side-milestone #partial-discussion-sidebar > :has(#milestone-select-menu),
+html.prd-pr.prd-hide-side-development #partial-discussion-sidebar > create-branch,
+html.prd-pr.prd-hide-side-notifications #partial-discussion-sidebar > .sidebar-notifications,
+html.prd-pr.prd-hide-side-participants #partial-discussion-sidebar > :has(> .participation),
+html.prd-pr.prd-hide-side-maintainers #partial-discussion-sidebar > .discussion-sidebar-item:has(> .octicon-check),
+html.prd-pr.prd-hide-side-lock #partial-discussion-sidebar > :has(.js-lock-issue),
+html.prd-pr.prd-hide-side-archive #partial-discussion-sidebar > :has(.js-archive-pull-request) { display: none !important; }
+
+html.prd-pr.prd-hide-side-all [class*="PageLayout-PaneWrapper"]:has(> #pr-conversation-sidebar) { display: none !important; }
+
+/* ---- Conversación ---- */
+html.prd-pr.prd-hide-code-button [class*="PageHeader-Actions"] button[aria-haspopup="true"][class*="hideLeadingVisual"] { display: none !important; }
+
+html.prd-pr.prd-hide-convert-draft [class*="mergePartialContainer"] > .text-small.flex-justify-end,
+html.prd-pr.prd-hide-convert-draft #partial-discussion-sidebar form[id^="pull-request-reviewers-form"] > .py-2.d-flex:has(a[href$="/draft"], button) { display: none !important; }
+
+html.prd-pr.prd-hide-cli-hint [class*="mergePartialContainer"] span.f6.fgColor-muted { display: none !important; }
+
+html.prd-pr.prd-hide-reactions .js-discussion .comment-reactions { display: none !important; }
+
+html.prd-pr.prd-hide-guidelines #issuecomment-new > .text-small.color-fg-muted { display: none !important; }
+html.prd-pr.prd-hide-protip #issuecomment-new > .protip { display: none !important; }
+html.prd-pr.prd-hide-footer footer.footer { display: none !important; }

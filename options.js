@@ -19,7 +19,7 @@ const PRD_OPTIONS = [
     { key: "side-projects", label: "Projects", on: true },
     { key: "side-milestone", label: "Milestone", on: true },
     { key: "side-development", label: "Development", on: true },
-    { key: "side-notifications", label: "Notifications", on: false },
+    { key: "side-notifications", label: "Notifications", on: true },
     { key: "side-participants", label: "Participantes", on: true },
     { key: "side-maintainers", label: "“Maintainers are allowed to edit”", on: true },
     { key: "side-lock", label: "Lock conversation", on: true },
